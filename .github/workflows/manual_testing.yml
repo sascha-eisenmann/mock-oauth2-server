@@ -30,4 +30,4 @@ jobs:
           NEW_VERSION=1h
           IMAGE=${IMAGE_NAME}:${NEW_VERSION}
           echo "Building new version ${NEW_VERSION} of $IMAGE"
-          ./gradlew jib --image="${IMAGE}"
+          ./gradlew jib --image="${IMAGE}" --warning-mode all
